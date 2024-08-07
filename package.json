@@ -1,0 +1,20 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "Flexbox",
+    "Portafolio"
+  ],
+  "author": "Jorge Manrique Chavarro georgemanc.28@gmail.com",
+  "license": "ISC",
+  "description": "Aplicación web para portafolio personal",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
