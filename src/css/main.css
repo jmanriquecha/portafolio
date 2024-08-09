@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --color-pimary: #000;
+    --color-secondary: #F6F6F6;
+    --color-tertiary: #22D4FD;
+    --color-hover: #272727;
+
+    --font-montserrat: font-family: "Montserrat", sans-serif;
+    --font-krona: "Krona One", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +21,7 @@ html {
 }
 
 body {
-    background-color: #000000;
+    background-color: var(--color-pimary);
     box-sizing: border-box;
 }
 
@@ -27,7 +37,7 @@ body {
 .header .navbar ul {
     display: flex;
     gap: 15px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-montserrat);
     font-size: 24px;
     font-weight: 600;
 }
@@ -51,25 +61,25 @@ body {
 }
 
 .descripcion h1 {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--font-krona);
     font-weight: 900;
     font-size: 36px;
-    color: #F6F6F6;
+    color: var(--color-secondary);
     margin-bottom: 40px;
 }
 
 .descripcion .h1-resaltado {
-    color: #22D4FD;
+    color: var(--color-tertiary);
 }
 
 .descripcion p {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-montserrat);
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
     font-size: 25px;
     line-height: 1.5em;
-    color: #F6F6F6;
+    color: var(--color-secondary);
     margin-bottom: 40px;
 }
 
@@ -82,10 +92,10 @@ body {
 }
 
 .group-buttons h2 {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--font-krona);
     font-size: 24px;
     font-weight: 400;
-    color: #F6F6F6;
+    color: var(--color-secondary);
 }
 
 .btn {
@@ -95,18 +105,18 @@ body {
     gap: 10px;
     width: 378px;
     padding: 24.5px 0;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--font-krona);
     font-size: 24px;
     font-weight: 600;
-    background-color: #000000;
-    border: #22D4FD solid 1px;
+    background-color: var(--color-pimary);
+    border: var(--color-tertiary) solid 2px;
     border-radius: 8px;
     cursor: pointer;
-    color: #F6F6F6;
+    color: var(--color-secondary);
 }
 
 .btn:hover {
-    background-color: #272727;
+    background-color: var(--color-hover);
 }
 
 .img-container {
@@ -122,15 +132,19 @@ body {
     width: 100%;
 }
 
+.text-left {
+    text-align: left !important;
+}
+
 /*Footer*/
 .footer {
     width: 100%;
     height: auto;
     padding: 30px 0;
     text-align: center;
-    background-color: #22D4FD;
-    color: #F6F6F6;
-    font-family: "Montserrat", sans-serif;
+    background-color: var(--color-tertiary);
+    color: var(--color-secondary);
+    font-family: var(--font-montserrat);
     font-size: 24px;
     font-weight: 400;
     margin-top: 50px;
